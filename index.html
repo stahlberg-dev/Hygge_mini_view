@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="Сайт о походной печи HYGGELIG"/>
     <meta property="og:image" content="https://mini.hyggehot.ru/images/og/hyggelig-mini.png">
     <title>Заказать Походную печь на пеллетах от производителя | Hyggelig</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230126160023">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230126234709">
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -39,7 +39,7 @@
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
     </script>
-    <script defer src="https://af.click.ru/af.js?id=12146&_v=20230126160023"></script>
+    <script defer src="https://af.click.ru/af.js?id=12146&_v=20230126234709"></script>
     
 </head>
 <body>
@@ -55,15 +55,8 @@
                 <div class="header__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li class="menu__item menu__item_mobile">
-                                <a data-goto=".about"
-                                   href="#!" 
-                                    
-                                   class="menu__link header__link">О Хюгге</a>
-                            </li>
                             <li class="menu__item">
                                 <a href="gallery.html" 
-                                   
                                    class="menu__link header__link">Галерея</a>
                             </li>
                             <li class="menu__item">
@@ -72,11 +65,11 @@
                                     
                                    class="menu__link header__link">Комплектация</a>
                             </li>
-                            <li class="menu__item menu__item_mobile">
-                                <a data-goto=".pellets" 
+                            <li class="menu__item">
+                                <a data-goto=".accessories" 
                                    href="#!" 
                                     
-                                   class="menu__link header__link">Пеллеты</a>
+                                   class="menu__link header__link">Комплектующие</a>
                             </li>
                             <li class="menu__item">
                                 <a data-goto=".safety" 
@@ -84,23 +77,11 @@
                                     
                                    class="menu__link header__link">Безопасность</a>
                             </li>
-                            <li class="menu__item menu__item_mobile">
-                                <a data-goto=".companion" 
-                                   href="#!" 
-                                    
-                                   class="menu__link header__link">Надёжность</a>
-                            </li>
                             <li class="menu__item">
                                 <a data-goto=".constructive" 
                                    href="#!" 
                                     
                                    class="menu__link header__link">Конструктив</a>
-                            </li>
-                            <li class="menu__item">
-                                <a data-goto=".accessories" 
-                                   href="#!" 
-                                    
-                                   class="menu__link header__link">Комплектующие</a>
                             </li>
                             <li class="menu__item">
                                 <a data-goto=".questions" 
@@ -1462,21 +1443,20 @@
             <nav class="footer__menu">
                 <ul class="footer__menu-left">
                     <li class="footer__menu-item">
-                        <a href="gallery.html" 
-                            
+                        <a href="gallery.html"
                            class="footer__menu-link footer__link">Галерея</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a data-goto=".safety" 
+                           href="#!" 
+                           
+                           class="footer__menu-link footer__link">Безопасность</a>
                     </li>
                     <li class="footer__menu-item">
                         <a data-goto=".pellets" 
                            href="#!" 
                               
                            class="footer__menu-link footer__link">Пеллеты</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a data-goto=".companion" 
-                           href="#!" 
-                            
-                           class="footer__menu-link footer__link">Надёжность</a>
                     </li>
                 </ul>
                 <ul class="footer__menu-center">
@@ -1501,16 +1481,15 @@
                 </ul>
                 <ul class="footer__menu-right">
                     <li class="footer__menu-item">
-                        <a data-goto=".safety" 
-                           href="#!" 
-                           
-                           class="footer__menu-link footer__link">Безопасность</a>
-                    </li>
-                    <li class="footer__menu-item">
                         <a data-goto=".questions" 
                            href="#!" 
                            
                            class="footer__menu-link footer__link">Вопросы&nbsp;и&nbsp;ответы</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a data-popup="consultation" 
+                           href="#!"
+                           class="footer__menu-link footer__link">Получить&nbsp;консультацию</a>
                     </li>
                     <li class="footer__menu-item">
                         <a href="brochures/Руководство по эксплуатации Hyggelig Mini.pdf" 
@@ -1679,7 +1658,7 @@
                 <span class="popup__close-stripe"></span>
             </div>
             <h3 class="consultation-popup__title">Получить консультацию</h3>
-            <form class="consultation-popup__form form jsOrderForm jsPromoCode" action="#">
+            <form class="consultation-popup__form form jsLeadForm" action="#">
                 <div class="consultation-popup__input-wrapper form__input-wrapper">
                     <div class="consultation-popup__input-icon-wrapper form__input-icon-wrapper">
                         <svg class="consultation-popup__input-icon form__input-icon">
@@ -1711,8 +1690,25 @@
     </div>
 </div>
 
+<div data-popup-name="thanks" class="thanks-popup popup">
+    <div class="thanks-popup__wrapper popup__wrapper">
+        <div class="thanks-popup__content popup__content">
+            <div class="thanks-popup__close popup__close">
+                <span class="popup__close-stripe"></span>
+                <span class="popup__close-stripe"></span>
+            </div>
+            <h3 class="thanks-popup__title">Спасибо!</h3>
+            <div class="thanks-popup__text">
+                В&nbsp;ближайшее время с&nbsp;вами свяжется менеджер и&nbsp;проконсультирует.
+            </div>
+            <svg class="thanks-popup__icon">
+                <use xlink:href="img/icon_sprite/sprite.svg#tick"></use>
+            </svg>
+        </div>
+    </div>
+</div>
 
-    <script src="js/app.min.js?_v=20230126160023"></script>
+    <script src="js/app.min.js?_v=20230126234709"></script>
 
 </body>
 </html>
