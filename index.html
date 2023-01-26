@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="Сайт о походной печи HYGGELIG"/>
     <meta property="og:image" content="https://mini.hyggehot.ru/images/og/hyggelig-mini.png">
     <title>Заказать Походную печь на пеллетах от производителя | Hyggelig</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230124102206">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230126160023">
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -39,7 +39,7 @@
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
     </script>
-    <script defer src="https://af.click.ru/af.js?id=12146&_v=20230124102206"></script>
+    <script defer src="https://af.click.ru/af.js?id=12146&_v=20230126160023"></script>
     
 </head>
 <body>
@@ -187,11 +187,23 @@
                     </div>
                 </li>
             </ul>
-            <a data-goto=".order" 
-                href="#!" 
-                class="title-screen__button button button_color_primary">
-                <div class="title-screen__button-text button__text">Купить</div>
-            </a>
+            <div class="title-screen__buttons">
+                <a data-goto=".order"
+                    href="#!"
+                    class="title-screen__button 
+                           title-screen__button_type_order 
+                           button 
+                           button_color_primary">
+                    <div class="title-screen__button-text button__text">Купить</div>
+                </a>
+                <div data-popup="consultation"
+                     class="title-screen__button 
+                            title-screen__button_type_consultation 
+                            button 
+                            button_color_transparent">
+                    <div class="title-screen__button-text button__text">Получить&nbsp;консультацию</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -440,7 +452,7 @@
                 <h2 class="pellets__info-section-title observing">
                     Преимущества пеллет
                 </h2>
-                <img src="img/pellets/rhombus.png" alt="пеллеты" class="pellets__rhombus">
+                <img src="img/pellets/rhombus.webp" alt="пеллеты" class="pellets__rhombus">
                 <ul class="pellets__advantages">
                     <li class="pellets__advantage observing">
                         <div class="pellets__advantage-title">
@@ -858,10 +870,104 @@
     </div>
 </section>
 
+            <section class="main-order order">
+    <div class="order__container container">
+        <div class="order__content">
+            <h2 class="order__title">
+                Походная печь Hyggelig Mini
+            </h2>
+            <div class="order__subtitle">
+                Твой надежный друг в&nbsp;любой точке&nbsp;мира
+            </div>
+            <form class="order__form form jsOrderForm jsPromoCode" action="#">
+                <div class="order__prices">
+                    <div class="order__old-price jsPriceOld">
+                        <span class="value">18&nbsp;390</span>&nbsp;₽
+                    </div>
+                    <div class="order__price jsPrice">
+                        <span class="value">35&nbsp;990</span>&nbsp;₽
+                    </div>
+                </div>
+                <div class="order__input-wrapper form__input-wrapper">
+                    <div class="order__input-icon-wrapper form__input-icon-wrapper">
+                        <svg class="order__input-icon form__input-icon">
+                            <use xlink:href="img/icon_sprite/sprite.svg#person"></use>
+                        </svg>
+                    </div>
+                    <input class="order__input form__input" type="text" name="name" required placeholder="Имя">
+                </div>
+                <div class="order__input-wrapper form__input-wrapper">
+                    <div class="order__input-icon-wrapper form__input-icon-wrapper">
+                        <svg class="order__input-icon form__input-icon">
+                            <use xlink:href="img/icon_sprite/sprite.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <input class="order__input form__input form__input_phone-mask" type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="order__input-wrapper form__input-wrapper">
+                    <div class="order__input-icon-wrapper form__input-icon-wrapper">
+                        <svg class="order__input-icon order__input-icon_type_promo form__input-icon">
+                            <use xlink:href="img/icon_sprite/sprite.svg#promo"></use>
+                        </svg>
+                    </div>
+                    <input class="order__input form__input jsPromoCodeInput" type="text" name="promo" placeholder="Промокод">
+                    <div class="order__input-promo-btn">
+                        <svg class="order__input-promo-btn-icon">
+                            <use xlink:href="img/icon_sprite/sprite.svg#slider-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="order__promo-info jsPromoCodeInfo"></div>
+                <label class="order__agreement form__agreement">
+                    <input type="checkbox" class="order__agreement-input form__agreement-input" name="agreement" checked required> 
+                    <div class="order__agreement-checkbox form__agreement-checkbox"></div>
+                    <div class="order__agreement-text form__agreement-text">
+                        Я&nbsp;даю&nbsp;согласие на&nbsp;обработку своих персональных данных
+                    </div>
+                </label>
+                <button type="submit" class="order__button form__button button button_color_primary">
+                    <div class="order__button-text form__button-text button__text">Купить</div>
+                </button>
+                <div class="order__installment">
+                    <div class="order__installment-info">
+                        <div class="order__installment-title">
+                            <svg class="order__installment-icon">
+                                <use xlink:href="img/icon_sprite/sprite.svg#installment"></use>
+                            </svg>
+                            <div class="order__installment-title-text">
+                                Рассрочка&nbsp;от&nbsp;Тинькофф
+                            </div>
+                        </div>
+                        <div class="order__installment-plan jsPricePart" data-price-part="0.16667">
+                            на&nbsp;6&nbsp;месяцев за&nbsp;<span class="value">3&nbsp;065</span>&nbsp;₽
+                        </div>
+                    </div>
+                    <div class="order__installment-button 
+                                button button_color_white 
+                                jsCreditRequestBtn">
+                        <div class="order__installment-button-text button__text">В&nbsp;рассрочку</div>        
+                    </div>
+                </div>
+                <div data-popup="consultation"
+                     class="order__consultation-button 
+                            form__button 
+                            button 
+                            button_color_white 
+                            jsOpenCallbackPopup">
+                    <div class="order__consultation-button-text form__button-text button__text">Получить&nbsp;консультацию</div>        
+                </div>
+            </form>
+            <div class="order__content-image"></div>  
+        </div>
+        <div class="order__image">
+            <img src="img/order/oven.webp" alt="печь" class="order__photo">
+        </div>
+</section>
+
             <section class="main-page__delivery delivery">
     <div class="delivery__container container">
         <div class="delivery__image">
-            <img src="img/delivery/delivery.jpg" alt="доставка" class="delivery__photo">
+            <img src="img/delivery/delivery.webp" alt="доставка" class="delivery__photo">
         </div>
         <div class="delivery__text">
             <h2 class="delivery__title title observing">
@@ -1565,8 +1671,48 @@
     </div>
 </div>
 
+<div data-popup-name="consultation" class="consultation-popup popup">
+    <div class="consultation-popup__wrapper popup__wrapper">
+        <div class="consultation-popup__content popup__content">
+            <div class="consultation-popup__close popup__close">
+                <span class="popup__close-stripe"></span>
+                <span class="popup__close-stripe"></span>
+            </div>
+            <h3 class="consultation-popup__title">Получить консультацию</h3>
+            <form class="consultation-popup__form form jsOrderForm jsPromoCode" action="#">
+                <div class="consultation-popup__input-wrapper form__input-wrapper">
+                    <div class="consultation-popup__input-icon-wrapper form__input-icon-wrapper">
+                        <svg class="consultation-popup__input-icon form__input-icon">
+                            <use xlink:href="img/icon_sprite/sprite.svg#person"></use>
+                        </svg>
+                    </div>
+                    <input class="consultation-popup__input form__input" type="text" name="name" required placeholder="Имя">
+                </div>
+                <div class="consultation-popup__input-wrapper form__input-wrapper">
+                    <div class="consultation-popup__input-icon-wrapper form__input-icon-wrapper">
+                        <svg class="consultation-popup__input-icon form__input-icon">
+                            <use xlink:href="img/icon_sprite/sprite.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <input class="consultation-popup__input form__input form__input_phone-mask" type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+                </div>
+                <label class="consultation-popup__agreement form__agreement">
+                    <input type="checkbox" class="consultation__agreement-input form__agreement-input" name="agreement" checked required> 
+                    <div class="consultation-popup__agreement-checkbox form__agreement-checkbox"></div>
+                    <div class="consultation-popup__agreement-text form__agreement-text">
+                        Я&nbsp;даю&nbsp;согласие на&nbsp;обработку своих персональных данных
+                    </div>
+                </label>
+                <button type="submit" class="consultation-popup__button form__button button button_color_primary">
+                    <div class="consultation-popup__button-text form__button-text button__text">Перезвоните&nbsp;мне</div>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 
-    <script src="js/app.min.js?_v=20230124102206"></script>
+
+    <script src="js/app.min.js?_v=20230126160023"></script>
 
 </body>
 </html>
